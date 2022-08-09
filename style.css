@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root{
+   /*  Colors  */
+
+    --active-input-border: linear-gradient ( to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --input-error: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish: hsl(270, 3%, 87%);
+    --dark-grayish: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+ 
+    /*  Fonts  */
+    --main-font: 'Space Grotesk', sans-serif;
+    --size-font: 18px;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    font-size: var(--size-font);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.bg-img-cards{
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container{
+    background-color: var(white);
+}
+
+/*  --------CARDS SECTION-----------   */
+.cards img{
+    width: 400px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+}
+.front-card{
+    position: absolute;
+    top: 120px;
+    left: 15vw;
+}
+
+.back-card{
+    position: absolute;
+    top: 380px;
+    left: 20vw;
+}
