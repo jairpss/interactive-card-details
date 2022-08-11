@@ -43,17 +43,85 @@ body{
     background-color: var(white);
 }
 
-/*  --------CARDS SECTION-----------   */
-.cards img{
+/*  ----------------CARDS SECTION----------------   */
+.card-img{
     width: 400px;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.212);
     border-radius: 10px;
 }
+
+/*  -------Front Card-------   */
+
 .front-card{
     position: absolute;
     top: 130px;
     left: 15vw;
 }
+
+.front-card-content{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.front-card-content_logo{
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.front-card-content_number{
+    color: var(--light-grayish);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: .09rem;
+}
+
+.front-card-content_info{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 1rem; */
+}
+
+.front-card-content_info-name{
+    color: var(--light-grayish);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.front-card-content_info-month, .division, .front-card-content_info-year{
+    color: var(--light-grayish);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+/* .division{
+    color: var(--light-grayish);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.front-card-content_info-year{
+    color: var(--light-grayish);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 2px;
+} */
+
+/*  -------Back Card-------   */
 
 .back-card{
     position: absolute;
