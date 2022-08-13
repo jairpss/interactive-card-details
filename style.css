@@ -129,6 +129,16 @@ body{
     left: 20vw;
 }
 
+.back-card-cvv{
+    color: var(--light-grayish);
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 44%;
+    left: 80%;
+}
+
 /*  --------FORM-----------   */
 .form{
     
