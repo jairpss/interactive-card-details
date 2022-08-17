@@ -39,7 +39,7 @@
           <input type="text" placeholder="e.g. Jane Appleseed">
 
           <label for="">CARD NUMBER</label>
-          <input type="number" placeholder="e.g. 1111 0000 2222 4444">
+          <input type="text" pattern="[0-9]*" inputmode="numeric" maxlength="19"  placeholder="e.g. 1111 0000 2222 4444">
 
           <div class="form-dates-cvv">
               <div class="form-dates-container">
@@ -57,7 +57,7 @@
 
           </div>
           <div class="btn-container">
-            <button type="submit" class="btn-form">Confirm</button>
+            <button type="submit" class="confirm-btn">Confirm</button>
           </div>
         </form>
       </div>
