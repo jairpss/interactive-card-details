@@ -30,7 +30,6 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
-
 }
 
 .bg-img-cards{
@@ -123,9 +122,8 @@ body{
     left: 80%;
 }
 
-/*  --------FORM-----------   */
+/*  ----------------------FORM--------------------------   */
 .form{
-    
     padding: 170px 300px;
     width: 24rem;
     display: flex;
@@ -209,11 +207,10 @@ body{
     background-color:hsl(278, 60%, 21%);
 }
 
-@media screen and (max-width: 1370px){
-    .main{
-        grid-template-columns: 1fr 1fr;
-    }   
+/*--------------------MEDIA QUERIES--------------------------*/
 
+
+@media screen and (max-width: 1370px){
     .front-card{
         left: 10vw;
     }
@@ -251,6 +248,52 @@ body{
 
 @media screen and (max-width: 1110px){
     .form{
-        padding: 170px 120px;
+        padding: 170px 120px 170px 240px;
+    }
+}
+
+@media screen and (max-width: 1032px){
+    body{
+        overflow-y: scroll;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-img-cards{
+        background-image: url("./images/bg-main-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .cards{
+        padding: 200px 800px;
+    }
+
+    .card-img{
+        width: 360px;
+    }
+
+    .front-card{
+        top: 19vh;
+        left: 15vw;
+        z-index: 100;
+    }
+
+    .front-card-content_number{
+        font-size: 1.4rem;
+    }
+
+    .back-card{
+        top: 3vh;
+        left: 20vw;
+    }
+
+    .form{
+        padding: 100px 100px;
     }
 }
