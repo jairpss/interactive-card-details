@@ -297,3 +297,49 @@ body{
         padding: 100px 100px;
     }
 }
+
+@media screen and (max-width: 1031px){
+    .front-card{
+        top: 19vh;
+        left: 30vw;
+        z-index: 100;
+    }
+
+    .back-card{
+        top: 3vh;
+        left: 35vw;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .front-card{
+        left: 25vw;
+        z-index: 100;
+    }
+
+    .back-card{
+        left: 30vw;
+    }
+}
+
+@media screen and (max-width: 645px){
+    .front-card{
+        left: 20vw;
+        z-index: 100;
+    }
+
+    .back-card{
+        left: 25vw;
+    }
+}
+
+@media screen and (max-width: 535px){
+    .front-card{
+        left: 15vw;
+        z-index: 100;
+    }
+
+    .back-card{
+        left: 20vw;
+    }
+}
