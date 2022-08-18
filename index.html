@@ -10,27 +10,27 @@
 </head>
 <body>
   <main class="main">
-    
+
       <div class="bg-img-cards">
         <section class="cards">
           <div class="front-card">
             <img src="./images/bg-card-front.png" alt="front card" class="card-img">
             <div class="front-card-content">
               <img src="./images/card-logo.svg" class="front-card-content_logo">
-              <h1 class="front-card-content_number">0000 0000 0000 0000</h1>
+              <h1 class="front-card-content_number" id="front-card-number">0000 0000 0000 0000</h1>
               <div class="front-card-content_info">
-                <p class="front-card-content_info-name">Jane Appleseed</p>
+                <p class="front-card-content_info-name" id="front-card-name">Jane Appleseed</p>
                 <p class="division">
-                  <span class="front-card-content_info-month">00</span>
+                  <span class="front-card-content_info-month" id="front-card-month">00</span>
                   /
-                  <span class="front-card-content_info-year">00</span>
+                  <span class="front-card-content_info-year" id="front-card-year">00</span>
                 </p>
               </div>
             </div>
           </div>
           <div class="back-card">
             <img src="./images/bg-card-back.png" alt="back card" class="card-img">
-            <span class="back-card-cvv">000</span>
+            <span class="back-card-cvv" id="back-card-cvv">000</span>
           </div>
         </section>
       </div>
@@ -39,23 +39,23 @@
       <div class="form-container">
         <form action="" class="form">
           <label for="">CARDHOLDER NAME</label>
-          <input type="text" placeholder="e.g. Jane Appleseed">
+          <input type="text" placeholder="e.g. Jane Appleseed" id="input-card-name">
 
           <label for="">CARD NUMBER</label>
-          <input type="text" pattern="[0-9]*" inputmode="numeric" maxlength="19"  placeholder="e.g. 1111 0000 2222 4444">
+          <input type="text" maxlength="19"  placeholder="e.g. 1111 0000 2222 4444" id="input-card-number">
 
           <div class="form-dates-cvv">
               <div class="form-dates-container">
                   <label for="">EXP. DATE (MM/YY)</label>
                   <div class="form-dates-input">
-                      <input type="text" placeholder="MM">
-                      <input type="text" placeholder="YY">
+                      <input type="text" placeholder="MM" inputmode="numeric" maxlength="2" id="input-month">
+                      <input type="text" placeholder="YY" inputmode="numeric" maxlength="2" id="input-year">
                   </div>
               </div>
 
               <div class="form-cvv-container">
                 <label for="">CVV</label>
-                <input type="text" placeholder="e.g. 123">
+                <input type="text" placeholder="e.g. 123" nputmode="numeric" maxlength="3" id="input-cvv">
             </div>
 
           </div>
