@@ -149,6 +149,11 @@ body{
     font-size: 1rem;
     font-weight: 700;
     font-family: var(--main-font);
+    
+}
+
+.form input:focus{
+    outline: 1px solid hsl(249, 99%, 64%);
 }
 
 .form input::placeholder{
